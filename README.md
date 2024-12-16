@@ -17,7 +17,7 @@ Try out the application directly in your browser:
 
 ## **Usage**
 
-We have included example `.tck` files in this repository, which can be used to test the application's functionality.
+We have included example `.trk` files in this repository, which can be used to test the application's functionality.
 
 - These test files are located in the `/data/bundle/` folder.
 - Additionally, a `stat_template.csv` file is provided for segmentation of uploaded bundles.
