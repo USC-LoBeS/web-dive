@@ -1,0 +1,228 @@
+.full-page {
+  height: 100%;
+  min-height: calc(100vh - 70px);
+}
+
+.main-file-input {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  gap: 2rem;
+}
+
+.main-file-input .custom-file-input {
+  flex: 2;
+}
+/* CSS FOR FILE ACCORDIAN  */
+/* Card container */
+.file-card {
+  /* border: 1px solid #e5e7eb; */
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.accordian-name {
+  overflow: hidden;
+  width: 100%;
+}
+/* File name section */
+.accordian-name .file-name {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+.accordian-panel .accordion-button {
+  padding: 0.3rem 1rem;
+}
+
+.accordian-panel .accordian-body {
+  padding: 0.3rem 07rem;
+}
+.accordian-name .file-name .file-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%; /* Prevent overflow */
+}
+
+.accordian-name .file-name .file-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1f2937;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 200px;
+  text-overflow: ellipsis;
+}
+
+.accordian-name .file-title:hover {
+  cursor: pointer;
+}
+
+.accordian-name .file-name .file-size {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #6b7280; /* Neutral gray */
+  margin-top: 0.25rem; /* Spacing below the title */
+}
+
+.accordian-name .file-name .file-ext {
+  /* padding: 0.25rem 0.5rem; */
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 9999px; /* pill-shaped */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Color picker section */
+.file-card .color-picker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  z-index: 100;
+}
+
+.file-card .color-picker p {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+/* Visibility switch section */
+.file-card .visibility-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.file-card .visibility-switch p {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+/* Statistics file section  */
+.file-card .stats-file {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.file-card .stats-file .custom-file-input {
+  flex: 2;
+}
+
+.file-card .stats-file p {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.custom-file-input {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.custom-file-input input[type="text"] {
+  opacity: 0;
+  visibility: hidden; /* Hide the file input element */
+  position: absolute;
+  z-index: -1;
+}
+
+.custom-file-input label {
+  width: 100%;
+}
+
+.custom-file-input label > span {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  /* z-index: 1; */
+}
+
+/* Stats file container */
+.stats-file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5 rem 1rem;
+}
+
+.stats-file p {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+/* Meta switch container */
+.file-card .meta-switch {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.meta-switch svg:hover {
+  fill: #2563eb;
+  cursor: pointer;
+}
+
+.file-card .meta-switch .meta-toggle {
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  width: 100%;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding-top: 1rem;
+}
+.file-card .meta-switch .meta-toggle p {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.topbar-container {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.name-container {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-container img {
+  height: 50px;
+  width: auto;
+}
+
+.logo-name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: #333;
+  margin-top: 7px;
+}

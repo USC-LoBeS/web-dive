@@ -1,0 +1,147 @@
+.custom-file-input-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.shiny-input-container {
+  margin: 0;
+}
+.shiny-file-input-progress {
+  display: none;
+}
+
+.btn-file {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.input-group label {
+  width: 100% !important;
+}
+
+/* Square progress box */
+.custom-progress-box {
+  position: relative;
+
+  visibility: hidden;
+  overflow: hidden;
+  width: 50px;
+
+  border: 1px solid #404040;
+  border-radius: 0 4px 4px 0;
+  transition: background-color 0.3s ease, visibility 0.3s ease;
+}
+
+.custom-progress-box::after {
+  content: "";
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 0;
+
+  background-color: lightskyblue;
+  transition: height 2s ease;
+}
+
+.custom-progress-box.active {
+  visibility: visible;
+}
+
+.custom-progress-box.active::after {
+  height: 90%;
+}
+
+.custom-progress-box.complete {
+  visibility: visible;
+  background-color: #7ac142;
+}
+
+.custom-progress-box.complete::after {
+  height: 0;
+  transition: none;
+}
+
+.custom-file-input-container .input-group > input[type="text"] {
+  display: none !important;
+  opacity: 0;
+  visibility: hidden; /* Hide the file input element */
+  position: absolute;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+}
+
+/* Spinner styling */
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  z-index: 5;
+  border: 3px solid transparent;
+  border-top-color: #fff; /* Spinner color */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  transition: opacity 0.3s ease;
+}
+
+.custom-progress-box.active .spinner {
+  visibility: visible; /* Show spinner when active */
+  opacity: 1; /* Smooth fade-in */
+}
+
+/* Spinner animation */
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Checkmark */
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 35px;
+  height: 35px;
+  display: none; /* Hidden by default */
+  margin: auto;
+}
+
+.checkmark__check {
+  stroke-width: 4;
+  stroke: #fff;
+  stroke-dasharray: 48; /* Total path length */
+  stroke-dashoffset: 48; /* Start hidden */
+  animation: draw-check 0.5s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+/* Show Checkmark on Complete */
+.custom-progress-box.complete .spinner {
+  display: none; /* Hide spinner when complete */
+}
+
+.custom-progress-box.complete .checkmark {
+  display: block; /* Show checkmark */
+}
+
+/* Checkmark Animation */
+@keyframes draw-check {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
