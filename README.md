@@ -64,7 +64,7 @@ Web DiVE was developed as part of the DiVE (Diffusion MRI Visualization & Explor
 
 - [Siddharth Narula, Iyad Ba Gari, Aarya Vakharia, Neda Jahanshad, "Web DiVE - Tractography Anywhere. Organization for Human Brain Mapping (OHBM 2025) June 24,2025](https://drive.google.com/file/d/1Kl4Mh6r5AdBG24PGWuRKiNWjlSDoHnH8/view)
 
-- Open-source libraries including [Three.js](https://threejs.org/), [Plotly](https://plotly.com/javascript/), and [Matplotlib](https://matplotlib.org/) for enabling browser-based scientific visualization.
+- Open-source libraries including [pythreejs](https://pythreejs.readthedocs.io/), [Plotly](https://plotly.com/javascript/), and [Matplotlib](https://matplotlib.org/) for enabling browser-based scientific visualization.
 
 - [Siddharth Narula, Iyad Ba Gari, Shruti P. Gadewar, Sunanda Somu, Neda Jahanshad, "Diffusion Visualization Explorer (DiVE) Organization for Human Brain Mapping (OHBM 2024) June 26,2024](https://drive.google.com/file/d/1dsYLTrbfHmrlJNzih-CqbMye32q3sPfU/view)
 
